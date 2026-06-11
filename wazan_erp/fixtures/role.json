@@ -1,0 +1,37 @@
+[
+ {
+  "doctype": "Role",
+  "name": "Sales Executive",
+  "role_name": "Sales Executive"
+ },
+ {
+  "doctype": "Role",
+  "name": "Estimation Engineer",
+  "role_name": "Estimation Engineer"
+ },
+ {
+  "doctype": "Role",
+  "name": "Operations Manager",
+  "role_name": "Operations Manager"
+ },
+ {
+  "doctype": "Role",
+  "name": "Project Manager",
+  "role_name": "Project Manager"
+ },
+ {
+  "doctype": "Role",
+  "name": "Finance Manager",
+  "role_name": "Finance Manager"
+ },
+ {
+  "doctype": "Role",
+  "name": "QA QC Engineer",
+  "role_name": "QA QC Engineer"
+ },
+ {
+  "doctype": "Role",
+  "name": "Site Supervisor",
+  "role_name": "Site Supervisor"
+ }
+]

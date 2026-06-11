@@ -1,0 +1,80 @@
+{
+ "name": "Bid Item",
+ "doctype": "DocType",
+ "module": "Bidding",
+ "istable": 1,
+ "editable_grid": 1,
+ "track_changes": 0,
+ "fields": [
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "label": "Description",
+   "reqd": 1,
+   "in_list_view": 1,
+   "columns": 3
+  },
+  {
+   "fieldname": "quantity",
+   "fieldtype": "Float",
+   "label": "Qty",
+   "in_list_view": 1,
+   "columns": 1
+  },
+  {
+   "fieldname": "material_cost",
+   "fieldtype": "Currency",
+   "label": "Material",
+   "in_list_view": 1,
+   "columns": 2
+  },
+  {
+   "fieldname": "labor_cost",
+   "fieldtype": "Currency",
+   "label": "Labor",
+   "in_list_view": 1,
+   "columns": 2
+  },
+  {
+   "fieldname": "equipment_cost",
+   "fieldtype": "Currency",
+   "label": "Equipment",
+   "columns": 2
+  },
+  {
+   "fieldname": "subcontract_cost",
+   "fieldtype": "Currency",
+   "label": "Subcontract",
+   "columns": 2
+  },
+  {
+   "fieldname": "total_cost",
+   "fieldtype": "Currency",
+   "label": "Total Cost",
+   "read_only": 1,
+   "in_list_view": 1,
+   "bold": 1,
+   "columns": 2
+  },
+  {
+   "fieldname": "selling_price",
+   "fieldtype": "Currency",
+   "label": "Selling Price",
+   "read_only": 1,
+   "in_list_view": 1,
+   "bold": 1,
+   "columns": 2
+  }
+ ],
+ "permissions": [
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "export": 1,
+   "report": 1
+  }
+ ]
+}

@@ -1,0 +1,124 @@
+{
+ "name": "Bid",
+ "doctype": "DocType",
+ "module": "Bidding",
+ "autoname": "BID-.YYYY.-.####",
+ "title_field": "rfp",
+ "search_fields": "rfp,bid_status",
+ "track_changes": 1,
+ "fields": [
+  {
+   "fieldname": "rfp",
+   "fieldtype": "Link",
+   "label": "RFP",
+   "options": "RFP",
+   "reqd": 1,
+   "in_list_view": 1,
+   "bold": 1,
+   "in_standard_filter": 1
+  },
+  {
+   "fieldname": "bid_status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Draft\nInternal Review\nApproved\nSubmitted\nWon\nLost",
+   "default": "Draft",
+   "read_only": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1
+  },
+  {
+   "fieldname": "col_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "gp_percentage",
+   "fieldtype": "Percent",
+   "label": "GP %",
+   "default": "15",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "overhead_percentage",
+   "fieldtype": "Percent",
+   "label": "Overhead %",
+   "default": "10"
+  },
+  {
+   "fieldname": "sec_items",
+   "fieldtype": "Section Break",
+   "label": "Bid Items"
+  },
+  {
+   "fieldname": "bid_items",
+   "fieldtype": "Table",
+   "label": "Bid Items",
+   "options": "Bid Item"
+  },
+  {
+   "fieldname": "sec_summary",
+   "fieldtype": "Section Break",
+   "label": "Summary"
+  },
+  {
+   "fieldname": "total_cost",
+   "fieldtype": "Currency",
+   "label": "Total Cost",
+   "read_only": 1,
+   "bold": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "total_price",
+   "fieldtype": "Currency",
+   "label": "Total Price",
+   "read_only": 1,
+   "bold": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "gross_margin",
+   "fieldtype": "Currency",
+   "label": "Gross Margin",
+   "read_only": 1
+  }
+ ],
+ "permissions": [
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "export": 1,
+   "report": 1
+  },
+  {
+   "role": "Estimation Engineer",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 0,
+   "export": 1,
+   "report": 1
+  },
+  {
+   "role": "Operations Manager",
+   "read": 1,
+   "write": 1,
+   "create": 0,
+   "delete": 0,
+   "export": 1,
+   "report": 1
+  },
+  {
+   "role": "Finance Manager",
+   "read": 1,
+   "write": 0,
+   "create": 0,
+   "delete": 0,
+   "export": 1,
+   "report": 1
+  }
+ ]
+}

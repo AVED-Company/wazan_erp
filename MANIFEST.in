@@ -1,0 +1,1 @@
+recursive-include wazan_erp *.json *.js *.css *.html *.py
